@@ -20,5 +20,5 @@ void test_validate_my_username()
      */
     
 
-	TEST_ASSERT_TRUE_MESSAGE("Hello","Hello");
+	TEST_ASSERT_TRUE_MESSAGE(my_username(),malloc_username_from_conf_file());
 }
