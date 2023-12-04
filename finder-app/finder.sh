@@ -10,7 +10,6 @@ declare Y=0
 if [ -d $filesdir ];
 then
   X=$(grep -rc $searchstr $filesdir | wc -l)
-  #Y=$(grep -r "$searchstr" $filesdir | wc -l)
   for i in $(grep -rc $searchstr $filesdir | grep -oP :[0-9]* | grep -oP [0-9]*); do
 	((Y+=i))
   done
